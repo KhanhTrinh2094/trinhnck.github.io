@@ -46,6 +46,8 @@ var USER_TYPE_FLG_CORPORATION  = "2";				// 法人
 // 現在のご利用タイプ
 var current_user_type_flg = "1";
 
+var FLASH_STYLE_TRINH = "variable-2";
+
 //////////////////////////////////////////
 // Flash からデータを取得
 //////////////////////////////////////////
@@ -60,7 +62,7 @@ function setFlashValueToItems() {
 	SetToItem("organization1", FLASH_ORGANIZATION1, "value");
 	SetToItem("organization2", FLASH_ORGANIZATION2, "value");
 	SetToItem("organization3", FLASH_ORGANIZATION3, "value");
-
+	SetToItem("variable2", FLASH_STYLE_TRINH, "value");
 // 	// 利用者タイプを設定し、項目の表示/非表示を制御
 // 	var u = SetToItem("usertype", FLASH_USER_TYPE, "value");
 // 	if (u == null)
