@@ -26,7 +26,6 @@ W2PExternalBase.prototype = {
 
 	getSwfObj: function () {
 		W2PExternal_outDebug("[W2PExternalBase.getSwfObj()]");
-		console.log(this.swfId);
 		if (this.swfObj == null) {
 			W2PExternal_outDebug("[W2PExternalBase.getSwfObj()] now get #" + this.swfId);
 			this.swfObj = $("#" + this.swfId).get(0);
