@@ -1,14 +1,14 @@
 //<![CDATA[
 $(document).ready(function () {
-    // $('#zip').jpostal({
-    //  postcode : [
-    //    '#zip'
-    //  ],
-    //  address : {
-    //    '#address1'  : '%3%4',
-    //    '#address2'  : '%5'
-    //  }
-    // });
+    $('#zip').jpostal({
+     postcode : [
+       '#zip'
+     ],
+     address : {
+       '#address1'  : '%3%4',
+       '#address2'  : '%5'
+     }
+    });
 });
 
 var getViewPort = function () {
