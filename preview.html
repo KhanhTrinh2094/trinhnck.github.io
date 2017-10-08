@@ -35,6 +35,42 @@
         observe(window, 'resize', resize); // for resize event
         observe(window, 'load', resize); // for initialize
     </script>
+    <script type="text/javascript">
+        $(function () {
+            var zoomSize = 100;
+            var range = 20;
+            var minzoomSize = 100;
+            var maxzoomSize = 300;
+
+            $('#reduction').prop('disabled', true);
+            $('#imageSize').html('倍率' + zoomSize + '%');
+
+            $('#reduction').click(function () {
+                zooming(-range);
+                $('#magnification').prop('disabled', false);
+            });
+
+            $('#magnification').click(function () {
+                zooming(range);
+                $('#reduction').prop('disabled', false);
+            });
+
+            function zooming(val) {
+                zoomSize += val;
+                $('#W2PPreview10').css({ 'width': zoomSize + '%', 'height': zoomSize + '%', 'position': 'relative' });
+                $('#imageSize').html('倍率' + zoomSize + '%');
+
+                var leftpos = ($('#W2PPreview10').width() - $('.mainFlashArea').width()) / 2;
+                $('.mainFlashArea').scrollLeft(leftpos);
+
+                if (zoomSize >= maxzoomSize) {
+                    $('#magnification').prop('disabled', true);
+                } else if (minzoomSize >= zoomSize) {
+                    $('#reduction').prop('disabled', true);
+                }
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -108,10 +144,6 @@
             id: "W2PPreview10"
         };
         swfobject.embedSWF("https://stg3-wpl.web-creo.jp/WebMame/2.0/W2PPreview10.swf", "altDesigner", "100%", "100%", "10.0.0", "expressInstall.swf", flashvars, params, attributes);
-    </script>
-    <script src="https://ssl.google-analytics.com/urchin.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        _uacct = "UA-1565573-1"; urchinTracker();
     </script>
 </body>
 
