@@ -94,32 +94,38 @@
     <script type="text/javascript" src="js/hagaki2.js" charset="UTF-8"></script>
 
     <script type="text/javascript">
+        var idPreviewex = "W2PPreviewex";
+        var w2pPreviewex = W2PExternalIO_createW2PPreviewex(idPreviewex, w2pPreviewex_onLoadFinished);
+        var callbacks = {
+            "002": onAddImageFinished,
+            "003": onDeleteImageFinished,
+            "004": onResetHistoryFinished
+        };
+        w2pPreviewex.setCallbacks(callbacks);
         var flashvars = {
-			sid: "sid99",
+            sid: "sid99",
             aid: "a3f821eed9dd4b85b45dc3dcdc841f79",
             m: "98ea9c3da2fb9444",
             sn: "171008594f5584d3",
             dn: "171008594f5584d30001",
-			g: "font:1,color:1,illust:printboy%2Fillustration,logo:1,item:SH481TXXXX",
-			ppba: "",
-			pppg: "",
-			furl: "preview.html%3Fcategory%3Dtype01%26mode%3D1",
-			burl: "easyedit.html%3Fcategory%3Dtype01%26itemId%3DW070%26page%3D1%26mode%3D2",
-			debug: "",
-			loglevel: ""
-		};
-		var params = {
-			menu: "false",
-			scale: "noScale",
-			allowFullscreen: "true",
-			allowScriptAccess: "always",
-			bgcolor: "#FFFFFF",
-			wmode: "opaque"
-		};
-		var attributes = {
-			id:"W2PDesignerV2"
-		};
-		swfobject.embedSWF("https://v2-wpl.web-creo.jp/WebMame/2.0/W2PDesignerV2.swf", "altDesigner", "100%", "100%", "10.0.0", "expressInstall.swf", flashvars, params, attributes);
+            g: "font:1,color:1,illust:1,logo:1",
+            furl: "preview.html",
+            burl: "",
+            debug: "",
+            loglevel: ""
+        };
+        var params = {
+            menu: "false",
+            scale: "noScale",
+            allowFullscreen: "true",
+            allowScriptAccess: "always",
+            bgcolor: "#FFFFFF",
+            wmode: "opaque"
+        };
+        var attributes = {
+            id: "W2PPreviewex"
+        };
+        swfobject.embedSWF("https://stg3-wpl.web-creo.jp/WebMame/2.0/W2PPreviewex.swf", "altDesigner", "100%", "100%", "10.0.0", "expressInstall.swf", flashvars, params, attributes);
     </script>
 </body>
 
