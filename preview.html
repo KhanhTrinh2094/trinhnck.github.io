@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo</title>
+    <link rel="stylesheet" href="/pc/css/style.css" type="text/css" media="screen">
+    <link href="/pc/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/pc/css/bootstrap-mystyle.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/pc/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="/pc/js/swfobject.js"></script>
+    <link rel="stylesheet" href="/pc/dialog/jquery-ui.min.css">
+    <script src="/pc/dialog/dialog.js"></script>
+    <script src="/pc/dialog/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/pc/js/script.js"></script>
+
+    <script language="JavaScript">
+        var resize = function (event) {
+            var main = document.getElementById('main');
+            var viewport = getViewPort();
+            var height = viewport.height - 300; // 200 = header.height + footer.height
+            main.style.height = (height <= 0 ? 0 : height) + 'px';
+        }
+
+        observe(window, 'resize', resize); // for resize event
+        observe(window, 'load', resize); // for initialize
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            //初期サイズ(%)
+            var zoomSize = 100;
+            //1回で変更するサイズ(%)
+            var range = 20;
+            //最少サイズ(%)
+            var minzoomSize = 100;
+            //最大サイズ(%)
+            var maxzoomSize = 300;
+
+            //初期表示
+            $('#reduction').prop('disabled', true);
+            $('#imageSize').html('倍率' + zoomSize + '%');
+
+            //縮小ボタン押下
+            $('#reduction').click(function () {
+                zooming(-range);
+                $('#magnification').prop('disabled', false);
+            });
+
+            //拡大ボタン押下
+            $('#magnification').click(function () {
+                zooming(range);
+                $('#reduction').prop('disabled', false);
+            });
+
+            //表示領域のサイズ変更
+            function zooming(val) {
+                //倍率変更
+                zoomSize += val;
+                $('#W2PPreview10').css({ 'width': zoomSize + '%', 'height': zoomSize + '%', 'position': 'relative' });
+                $('#imageSize').html('倍率' + zoomSize + '%');
+
+                //スクロールバーの位置を変更
+                var leftpos = ($('#W2PPreview10').width() - $('.mainFlashArea').width()) / 2;
+                $('.mainFlashArea').scrollLeft(leftpos);
+
+                //拡大/縮小ボタンの使用不可設定
+                if (zoomSize >= maxzoomSize) {
+                    //最大サイズ以上になった場合
+                    $('#magnification').prop('disabled', true);
+                } else if (minzoomSize >= zoomSize) {
+                    //最少サイズ以下になった場合
+                    $('#reduction').prop('disabled', true);
+                }
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <form name="f_freeprev" method="post" action="">
+        <input type="hidden" name="postback_action" value="">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="page-header col-lg-12">
+                    <h2>デザイン編集確認</h2>
+                </div>
+
+
+                <div style="text-align:right">
+                    <span id="imageSize"></span> &nbsp;
+                    <input class="btn btn-default" type="button" id="magnification" value="拡大">
+                    <input class="btn btn-default" type="button" id="reduction" value="縮小">
+                </div>
+                <div id="prev-img" class="row col-lg-12">
+                    <div class="col-lg-12">
+                        <h3>表面デザイン</h3>
+                    </div>
+
+                    <div id="main" style="" class="col-lg-12">
+                        <div class="mainFlashArea" style="border: solid 1px #CCCCCC;margin-bottom:45px;overflow: auto; position:relative;">
+                            <div id="altDesigner">
+                                <p>W2PDesigner Flash</p>
+                                <p>
+                                    <a href="http://www.adobe.com/go/getflashplayer">
+							<img src="//www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+						</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-12" style="margin:25px 0;">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <p class="center"><input type="button" class="btn btn-default" style="width:200px;" value="戻る" onclick="location.href='easyimg.html?pId=hagaki&itemId=waku1&sType=1&mode=2&category=cn_00'"></p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <p class="center"><input type="button" class="btn btn-default" style="width:200px;" value="次へ" onclick="location.href='option.html?mode=2&category=cn_00'"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script language="JavaScript">
+        var flashvars = {
+            sid: "sid99",
+            aid: "a3f821eed9dd4b85b45dc3dcdc841f79",
+            m: "bd95c089182b8e94",
+            sn: "1710080e8b771126",
+            dn: "1710080e8b7711260001",
+            g: "font:1,color:1,illust:1,logo:1",
+            furl: "option.html?mode=2&category=cn_00",
+            burl: "",
+            debug: "",
+            loglevel: ""
+        };
+        var params = {
+            menu: "false",
+            scale: "noScale",
+            allowFullscreen: "true",
+            allowScriptAccess: "always",
+            bgcolor: "#FFFFFF",
+            wmode: "opaque"
+        };
+        var attributes = {
+            id: "W2PPreview10"
+        };
+        swfobject.embedSWF("https://stg3-wpl.web-creo.jp/WebMame/2.0/W2PPreview10.swf", "altDesigner", "100%", "100%", "10.0.0", "expressInstall.swf", flashvars, params, attributes);
+    </script>
+    <script src="https://ssl.google-analytics.com/urchin.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        _uacct = "UA-1565573-1"; urchinTracker();
+    </script>
+</body>
+
+</html>
