@@ -8,7 +8,7 @@ function w2pBridge_onLoadFinished(resultId, detail) {
 			W2PExternal_outDebug("setFlashValueToItems() Not Found.");
 		}
 	} else {
-		var mesg =  "ブリッジFlash のロードに失敗しました。：" + detail;
+		var mesg = "ブリッジFlash のロードに失敗しました。：" + detail;
 		addWarning(mesg);
 		location.href = "#info";
 	}
@@ -23,7 +23,7 @@ function w2pPreview_onLoadFinished(resultId, detail) {
 
 function onSaveFinished(resultId, detail) {
 	if (resultId == "I001") {
-		if(isReloaded) {
+		if (isReloaded) {
 			var ret = w2pPreview.reload(onReloadFinished);
 		} else {
 			var ret = w2pPreview.validate(onValidateFinished);
@@ -96,7 +96,7 @@ function onValidateFinished(resultId, details) {
 function onSaveFinishedAndReload(resultId, detail) {
 	if (resultId == "I001") {
 	} else {
-//		addWarning(resultId + ", " + detail);
+		//		addWarning(resultId + ", " + detail);
 		W2PExternal_outDebug(resultId + ", " + detail);
 		var mesg = "";
 		if (resultId == "E103") {

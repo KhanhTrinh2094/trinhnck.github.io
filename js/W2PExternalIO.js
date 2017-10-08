@@ -13,7 +13,7 @@ function W2PExternal_init() {
 	W2PExternal_isDebugMode = false;
 	W2PExternal_update = "2012/08/30 13:00";
 
-	if (! window['console']) {
+	if (!window['console']) {
 		window.console = null;
 	}
 	W2PExternal_outDebug(W2PExternal_update);
@@ -67,44 +67,44 @@ function W2PExternal_onNotify(objId, funcId, notifyId, details) {
 // W2PExternalIO class
 /////////////////////////////
 
-var W2PExternalIO = function() {
+var W2PExternalIO = function () {
 	this.externalMap = new Object();
 };
 
 W2PExternalIO.prototype = {
 
-	addW2PBridge : function(swfId, onLoadFinished) {
+	addW2PBridge: function (swfId, onLoadFinished) {
 		W2PExternal_outDebug("[W2PExternalIO.addW2PBridge()] id: " + swfId);
 		var externalObj = new W2PBridge(swfId, onLoadFinished);
 		this.setExternal(externalObj);
 		return externalObj;
 	},
 
-	addW2PPreview : function(swfId, onLoadFinished) {
+	addW2PPreview: function (swfId, onLoadFinished) {
 		W2PExternal_outDebug("[W2PExternalIO.addW2PPreview()] id: " + swfId);
 		var externalObj = new W2PPreview(swfId, onLoadFinished);
 		this.setExternal(externalObj);
 		return externalObj;
 	},
 
-	addW2PPreviewex : function(swfId, onLoadFinished) {
+	addW2PPreviewex: function (swfId, onLoadFinished) {
 		W2PExternal_outDebug("[W2PExternalIO.addW2PPreviewex()] id: " + swfId);
 		var externalObj = new W2PPreviewex(swfId, onLoadFinished);
 		this.setExternal(externalObj);
 		return externalObj;
 	},
 
-	setExternal : function(externalObj) {
+	setExternal: function (externalObj) {
 		W2PExternal_outDebug("[W2PExternalIO.setExternal()] key: " + externalObj.swfId);
 		this.externalMap[externalObj.swfId] = externalObj;
 	},
 
-	getSelfDomain : function() {
+	getSelfDomain: function () {
 		W2PExternal_outDebug("[W2PExternalIO.getSelfDomain()]");
 		return location.href.split('/')[2];
 	},
 
-	onNotify : function(objId, funcId, notifyId, details) {
+	onNotify: function (objId, funcId, notifyId, details) {
 		W2PExternal_outDebug("[W2PExternalIO.onNotify()] " + objId + ", " + funcId + ", " + notifyId);
 		var externalObj = this.externalMap[objId];
 		if (externalObj) {

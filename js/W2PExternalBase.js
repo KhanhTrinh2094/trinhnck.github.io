@@ -7,7 +7,7 @@
 // W2PExternalBase class
 /////////////////////////////
 
-var W2PExternalBase = function(swfId, callbackFunction) {
+var W2PExternalBase = function (swfId, callbackFunction) {
 	this.swfId = swfId;
 	this.swfObj = null;
 	this.loadCallbackFunction = callbackFunction;
@@ -16,15 +16,15 @@ var W2PExternalBase = function(swfId, callbackFunction) {
 
 W2PExternalBase.prototype = {
 
-	onLoadFinished : function(resultId, detail) {
-    	W2PExternal_outDebug("[W2PExternalBase.onLoadFinished()] " + resultId + ", " + detail);
-    	if ((this.loadCallbackFunction != null)
-			&& (typeof this.loadCallbackFunction == "function")){
-        	this.loadCallbackFunction.call(this, resultId, detail);
+	onLoadFinished: function (resultId, detail) {
+		W2PExternal_outDebug("[W2PExternalBase.onLoadFinished()] " + resultId + ", " + detail);
+		if ((this.loadCallbackFunction != null)
+			&& (typeof this.loadCallbackFunction == "function")) {
+			this.loadCallbackFunction.call(this, resultId, detail);
 		}
-    },
+	},
 
-	getSwfObj : function() {
+	getSwfObj: function () {
 		W2PExternal_outDebug("[W2PExternalBase.getSwfObj()]");
 		if (this.swfObj == null) {
 			W2PExternal_outDebug("[W2PExternalBase.getSwfObj()] now get #" + this.swfId);
@@ -36,12 +36,12 @@ W2PExternalBase.prototype = {
 		return this.swfObj;
 	},
 
-	setCallbacks : function(callbacks) {
+	setCallbacks: function (callbacks) {
 		W2PExternal_outDebug("[W2PExternalBase.getCallbacks()]");
 		this.callbacks = callbacks;
 	},
 
-	onNotify : function(funcId, notifyId, details) {
+	onNotify: function (funcId, notifyId, details) {
 		W2PExternal_outDebug("[W2PExternalBase.onNotify()] " + funcId + ", " + notifyId);
 		var callbackByFuncId = this.callbacks[funcId];
 		if ((callbackByFuncId != null)

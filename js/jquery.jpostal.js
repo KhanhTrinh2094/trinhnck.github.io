@@ -17,10 +17,10 @@ Jpostal.Database = function () {
     "use strict";
 
     this.address = [];    // database cache
-    this.map     = {};
-    this.url     = {
-        'http'  : '//jpostal-1006.appspot.com/json/',
-        'https' : '//jpostal-1006.appspot.com/json/'
+    this.map = {};
+    this.url = {
+        'http': '//jpostal-1006.appspot.com/json/',
+        'https': '//jpostal-1006.appspot.com/json/'
     };
 };
 
@@ -60,27 +60,27 @@ Jpostal.Database.prototype.get = function (i_postcode) {
         head3;
 
     switch (i_postcode.length) {
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-        head3 = i_postcode.substr(0, 3);
-        address = this.find(head3);
-        address = $.extend(defaults, address);
-        break;
-
-    case 7:
-        address = this.find(i_postcode);
-        if (address.length === 0) {
+        case 3:
+        case 4:
+        case 5:
+        case 6:
             head3 = i_postcode.substr(0, 3);
             address = this.find(head3);
-        }
-        address = $.extend(defaults, address);
-        break;
+            address = $.extend(defaults, address);
+            break;
 
-    default:
-        address = defaults;
-        break;
+        case 7:
+            address = this.find(i_postcode);
+            if (address.length === 0) {
+                head3 = i_postcode.substr(0, 3);
+                address = this.find(head3);
+            }
+            address = $.extend(defaults, address);
+            break;
+
+        default:
+            address = defaults;
+            break;
     }
 
     return address;
@@ -92,13 +92,13 @@ Jpostal.Database.prototype.getUrl = function (i_head3) {
     var url = '';
 
     switch (this.getProtocol()) {
-    case 'http:':
-        url = this.url.http;
-        break;
+        case 'http:':
+            url = this.url.http;
+            break;
 
-    case 'https:':
-        url = this.url.https;
-        break;
+        case 'https:':
+            url = this.url.https;
+            break;
     }
     url = url + i_head3 + '.json';
 
@@ -122,15 +122,15 @@ Jpostal.Database.prototype.request = function (i_postcode, i_callback) {
     url = this.getUrl(head3);
 
     options = {
-        async         : false,
-        dataType      : 'jsonp',
-        jsonpCallback : 'jQuery_jpostal_callback',
-        type          : 'GET',
-        url           : url,
-        success       : function () {    // function(i_data, i_dataType
+        async: false,
+        dataType: 'jsonp',
+        jsonpCallback: 'jQuery_jpostal_callback',
+        type: 'GET',
+        url: url,
+        success: function () {    // function(i_data, i_dataType
             i_callback();
         },
-        timeout : 5000    // msec
+        timeout: 5000    // msec
     };
     this.ajax(options);
     return true;
@@ -152,7 +152,7 @@ Jpostal.Database.prototype.save = function (i_data) {
 
         if (that.map[postcode] === undefined) {
             that.address.push(rcd);
-            that.map[postcode] = {state : 'complete', time : 0};
+            that.map[postcode] = { state: 'complete', time: 0 };
         } else if (that.map[postcode].state === 'waiting') {
             that.address.push(rcd);
             that.map[postcode].state = 'complete';
@@ -205,8 +205,8 @@ Jpostal.Database.prototype.setStatus = function (i_postcode) {
 
     if (this.map[postcode] === undefined) {
         this.map[postcode] = {
-            state : 'waiting',
-            time  : 0
+            state: 'waiting',
+            time: 0
         };
     }
 
@@ -241,11 +241,11 @@ Jpostal.Database.prototype.getTime = function () {
 Jpostal.Jpostal = function (i_JposDb) {
     "use strict";
 
-    this.address  = '';
-    this.jposDb   = i_JposDb;
-    this.options  = {};
+    this.address = '';
+    this.jposDb = i_JposDb;
+    this.options = {};
     this.postcode = '';
-    this.minLen   = 3;
+    this.minLen = 3;
 };
 
 Jpostal.Jpostal.prototype.displayAddress = function () {
@@ -276,19 +276,19 @@ Jpostal.Jpostal.prototype.isSelectTagForPrefecture = function (i_key, i_fmt) {
     var f;
 
     switch (i_fmt) {
-    case '%3':
-    case '%p':
-    case '%prefecture':
-        if ($(i_key).get(0).tagName.toUpperCase() === 'SELECT') {
-            f = true;
-        } else {
-            f = false;
-        }
-        break;
+        case '%3':
+        case '%p':
+        case '%prefecture':
+            if ($(i_key).get(0).tagName.toUpperCase() === 'SELECT') {
+                f = true;
+            } else {
+                f = false;
+            }
+            break;
 
-    default:
-        f = false;
-        break;
+        default:
+            f = false;
+            break;
     }
     return f;
 };
@@ -328,16 +328,16 @@ Jpostal.Jpostal.prototype.setSelectTagForPrefecture = function (i_key, i_value) 
 Jpostal.Jpostal.prototype.formatAddress = function (i_fmt, i_address) {
     "use strict";
 
-    var    s = i_fmt;
+    var s = i_fmt;
 
     s = s.replace(/%3|%p|%prefecture/, i_address[1]);
-    s = s.replace(/%4|%c|%city/,       i_address[2]);
-    s = s.replace(/%5|%t|%town/,       i_address[3]);
-    s = s.replace(/%6|%a|%address/,    i_address[4]);
-    s = s.replace(/%7|%n|%name/,       i_address[5]);
+    s = s.replace(/%4|%c|%city/, i_address[2]);
+    s = s.replace(/%5|%t|%town/, i_address[3]);
+    s = s.replace(/%6|%a|%address/, i_address[4]);
+    s = s.replace(/%7|%n|%name/, i_address[5]);
 
-    s = s.replace(/%8/,  i_address[6]);
-    s = s.replace(/%9/,  i_address[7]);
+    s = s.replace(/%8/, i_address[6]);
+    s = s.replace(/%9/, i_address[7]);
     s = s.replace(/%10/, i_address[8]);
 
     return s;
@@ -425,65 +425,65 @@ Jpostal.Jpostal.prototype.scanPostcode = function () {
         s4;
 
     switch (this.options.postcode.length) {
-    case 0:
-        break;
+        case 0:
+            break;
 
-    case 1:
-        //    github issue #8: 1つ目を空欄、2つ目を「001」としても、「001」として北海道札幌市を表示してしまう
-        //    ----------------------------------------
-        //    case    postcode    result
-        //    ----------------------------------------
-        //    1        ''            ''
-        //    1        12            ''
-        //    2        123           123
-        //    2        123-          123
-        //    2        123-4         123
-        //    3        123-4567      1234567
-        //    2        1234          123
-        //    4        1234567       1234567
-        //    ----------------------------------------
-        s = String($(this.options.postcode[0]).val());
-        if (0 <= s.search(/^([0-9]{3})([0-9A-Za-z]{4})/)) {
-            // case 4
-            s = s.substr(0, 7);
-        } else if (0 <= s.search(/^([0-9]{3})-([0-9A-Za-z]{4})/)) {
-            // case 3
-            s = s.substr(0, 3) + s.substr(4, 4);
-        } else if (0 <= s.search(/^([0-9]{3})/)) {
-            // case 2
-            s = s.substr(0, 3);
-        } else {
-            // case 1
-            s = '';
-        }
-        break;
-
-    case 2:
-        //    github issue #8: 1つ目を空欄、2つ目を「001」としても、「001」として北海道札幌市を表示してしまう
-        //    ----------------------------------------
-        //    case    post1    post2    result
-        //    ----------------------------------------
-        //    1        ''        ---        ''
-        //    1        12        ---        ''
-        //    2        123        ''        123
-        //    2        123        4         123
-        //    3        123        4567      1234567
-        //    ----------------------------------------
-        s3 = String($(this.options.postcode[0]).val());
-        s4 = String($(this.options.postcode[1]).val());
-        if (0 <= s3.search(/^[0-9]{3}$/)) {
-            if (0 <= s4.search(/^[0-9A-Za-z]{4}$/)) {
+        case 1:
+            //    github issue #8: 1つ目を空欄、2つ目を「001」としても、「001」として北海道札幌市を表示してしまう
+            //    ----------------------------------------
+            //    case    postcode    result
+            //    ----------------------------------------
+            //    1        ''            ''
+            //    1        12            ''
+            //    2        123           123
+            //    2        123-          123
+            //    2        123-4         123
+            //    3        123-4567      1234567
+            //    2        1234          123
+            //    4        1234567       1234567
+            //    ----------------------------------------
+            s = String($(this.options.postcode[0]).val());
+            if (0 <= s.search(/^([0-9]{3})([0-9A-Za-z]{4})/)) {
+                // case 4
+                s = s.substr(0, 7);
+            } else if (0 <= s.search(/^([0-9]{3})-([0-9A-Za-z]{4})/)) {
                 // case 3
-                s = s3 + s4;
-            } else {
+                s = s.substr(0, 3) + s.substr(4, 4);
+            } else if (0 <= s.search(/^([0-9]{3})/)) {
                 // case 2
-                s = s3;
+                s = s.substr(0, 3);
+            } else {
+                // case 1
+                s = '';
             }
-        } else {
-            // case 1
-            s = '';
-        }
-        break;
+            break;
+
+        case 2:
+            //    github issue #8: 1つ目を空欄、2つ目を「001」としても、「001」として北海道札幌市を表示してしまう
+            //    ----------------------------------------
+            //    case    post1    post2    result
+            //    ----------------------------------------
+            //    1        ''        ---        ''
+            //    1        12        ---        ''
+            //    2        123        ''        123
+            //    2        123        4         123
+            //    3        123        4567      1234567
+            //    ----------------------------------------
+            s3 = String($(this.options.postcode[0]).val());
+            s4 = String($(this.options.postcode[1]).val());
+            if (0 <= s3.search(/^[0-9]{3}$/)) {
+                if (0 <= s4.search(/^[0-9A-Za-z]{4}$/)) {
+                    // case 3
+                    s = s3 + s4;
+                } else {
+                    // case 2
+                    s = s3;
+                }
+            } else {
+                // case 1
+                s = '';
+            }
+            break;
     }
 
     this.postcode = s;

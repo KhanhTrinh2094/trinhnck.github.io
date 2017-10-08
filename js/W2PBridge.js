@@ -11,12 +11,12 @@ function W2PBridge_getSelfDomain() {
 	return W2PExternal_getSelfDomain();
 }
 
-W2PBridge_onLoadFinished = function(resultId, detail) {
+W2PBridge_onLoadFinished = function (resultId, detail) {
 	W2PExternal_outDebug("[W2PBridge_onLoadFinished()] " + resultId + ", " + detail);
 	w2pBridge.onLoadFinished(resultId, detail);
 };
 
-W2PBridge_onSaveFinished = function(resultId, detail) {
+W2PBridge_onSaveFinished = function (resultId, detail) {
 	W2PExternal_outDebug("[W2PBridge_onSaveFinished()] " + resultId + ", " + detail);
 	w2pBridge.onSaveFinished(resultId, detail);
 };
@@ -25,7 +25,7 @@ W2PBridge_onSaveFinished = function(resultId, detail) {
 // W2PBridge class
 /////////////////////////////
 
-var W2PBridge = function(swfId, callbackFunction) {
+var W2PBridge = function (swfId, callbackFunction) {
 	this.swfId = swfId;
 	this.swfObj = null;
 	this.loadCallbackFunction = callbackFunction;
@@ -35,7 +35,7 @@ var W2PBridge = function(swfId, callbackFunction) {
 
 W2PBridge.prototype = new W2PExternalBase();
 
-W2PBridge.prototype.getValue = function(itemId) {
+W2PBridge.prototype.getValue = function (itemId) {
 	W2PExternal_outDebug("[W2PBridge.getValue()] itemId: " + itemId);
 	var val = null;
 	var obj = this.getSwfObj();
@@ -45,7 +45,7 @@ W2PBridge.prototype.getValue = function(itemId) {
 	return val;
 }
 
-W2PBridge.prototype.setValue = function(itemId, inputValue) {
+W2PBridge.prototype.setValue = function (itemId, inputValue) {
 	W2PExternal_outDebug("[W2PBridge.setValue()] itemId: " + itemId);
 	var retID = null;
 	var obj = this.getSwfObj();
@@ -59,7 +59,7 @@ W2PBridge.prototype.setValue = function(itemId, inputValue) {
 }
 
 
-W2PBridge.prototype.save = function(callbackFunction) {
+W2PBridge.prototype.save = function (callbackFunction) {
 	W2PExternal_outDebug("[W2PBridge.save()]");
 	var ret = false;
 	try {
@@ -69,12 +69,12 @@ W2PBridge.prototype.save = function(callbackFunction) {
 			obj.save();
 			ret = true;
 		}
-	} catch(e) {
+	} catch (e) {
 	}
 	return ret;
 };
 
-W2PBridge.prototype.onSaveFinished = function(resultId, detail) {
+W2PBridge.prototype.onSaveFinished = function (resultId, detail) {
 	W2PExternal_outDebug("[W2PBridge.onSaveFinished()] " + resultId + ", " + detail);
 	if ((this.saveCallbackFunction != null) && (typeof this.saveCallbackFunction == "function")) {
 		this.saveCallbackFunction.call(this, resultId, detail);

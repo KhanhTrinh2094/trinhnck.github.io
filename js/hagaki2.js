@@ -1,7 +1,7 @@
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-	$('#next').click(function() {
+	$('#next').click(function () {
 		var ret = w2pPreviewex.validate(onValidateFinished);
 		if (ret) {
 			W2PExternal_outDebug("w2pPreviewex.validate() call succeeded");
@@ -11,7 +11,7 @@ $(document).ready(function(){
 		return false;
 	});
 
-	$('#back').click(function() {
+	$('#back').click(function () {
 		var ret = w2pPreviewex.save(onSaveFinishedAndBack);
 		if (ret) {
 			W2PExternal_outDebug("w2pPreviewex.save() call succeeded");
