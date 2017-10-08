@@ -6,7 +6,7 @@
 	<meta name="keywords" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>W2Pサイト PaternB2C かんたん編集</title>
+	<title>Demo</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-mystyle.css" rel="stylesheet">
@@ -19,175 +19,10 @@
       <![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
 	<!-- <script type="text/javascript" src="http://jpostal-1006.appspot.com/jquery.jpostal.js"></script> -->
 	<script src="js/dialog.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
-	<script language="JavaScript">
-		//<![CDATA[
-		$(document).ready(function () {
-			// $('#zip').jpostal({
-			//  postcode : [
-			//    '#zip'
-			//  ],
-			//  address : {
-			//    '#address1'  : '%3%4',
-			//    '#address2'  : '%5'
-			//  }
-			// });
-		});
-
-		var resize = function (event) {
-			var leftContainer = $("#leftContainer").get(0);
-			var altPreview = $("#mainPreviewArea").get(0);
-			var w2pPreview = $("#W2PPreview10").get(0);
-
-			var viewport = getViewPort();
-			var iHeight = viewport.height - 300;
-			var iWidth = viewport.width - 300;
-			var objWidth = $("#leftContainer").width();
-
-			altPreview.style.height = objWidth + 'px';
-			w2pPreview.style.height = objWidth + 'px';
-
-			if (objWidth <= iHeight) {
-				altPreview.style.height = objWidth + 'px';
-				w2pPreview.style.height = objWidth + 'px';
-			}
-
-			if (iHeight >= 380) {
-				altPreview.style.height = objWidth + 'px';
-				w2pPreview.style.height = objWidth + 'px';
-			}
-
-			if (objWidth > iHeight) {
-				altPreview.style.height = iHeight + 'px';
-				w2pPreview.style.height = iHeight + 'px';
-			}
-
-		}
-
-
-		var getViewPort = function () {
-			var width, heiht;
-			if (self.innerHeight) {
-				width = self.innerWidth;
-				height = self.innerHeight;
-			} else if (document.documentElement && document.documentElement.clientHeight) {
-				width = document.documentElement.clientWidth;
-				height = document.documentElement.clientHeight;
-			} else if (document.body) {
-				width = document.body.clientWidth;
-				height = document.body.clientHeight;
-			}
-			return { width: width, height: height };
-		}
-
-		var observe = function (element, event, observer) {
-			if (element.addEventListener) {
-				element.addEventListener(event, observer, false);
-			} else if (element.attachEvent) {
-				element.attachEvent('on' + event, observer);
-			}
-		};
-		observe(window, 'resize', resize); // for resize event
-		observe(window, 'load', resize); // for initialize
-         //]]>
-	</script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$('#next').click(function () {
-				resetInfo();
-				var zipcode = document.getprintdata.zipcode.value;
-				document.getprintdata.zipcode.value = zenTohanNumericHyphen(zipcode);
-				document.easyprev.usertype.value = $('input[name="usertype"]:checked').val();
-				SetItemsToFlashValue(onSaveFinished);
-			});
-
-			$('input,textarea').change(function () {
-				isReloaded = true;
-			});
-		});
-
-		function reflectedPreview() {
-			var zipcode = document.getprintdata.zipcode.value;
-			document.getprintdata.zipcode.value = zenTohanNumericHyphen(zipcode);
-			ReflectedInThePreview();
-			isReloaded = false;
-		}
-
-		function zenTohanNumericHyphen(str) {
-			return str.replace(/[０-９－]/g, function (s) {
-				return String.fromCharCode(s.charCodeAt(0) - 65248);
-			});
-		}
-
-
-		$(function () {
-			var zoomSize = 100;
-			var range = 20;
-			var minzoomSize = 100;
-			var maxzoomSize = 300;
-
-			$('#reduction').prop('disabled', true);
-			$('#imageSize').html('倍率' + zoomSize + '%');
-
-			$('#reduction').click(function () {
-				zooming(-range);
-				$('#magnification').prop('disabled', false);
-			});
-
-			$('#magnification').click(function () {
-				zooming(range);
-				$('#reduction').prop('disabled', false);
-			});
-
-			function zooming(val) {
-				zoomSize += val;
-				$('#W2PPreview10').css({ 'width': zoomSize + '%', 'height': zoomSize + '%', 'position': 'relative' });
-				$('#imageSize').html('倍率' + zoomSize + '%');
-
-				var leftpos = ($('#W2PPreview10').width() - $('#mainPreviewArea').width()) / 2;
-				$('#mainPreviewArea').scrollLeft(leftpos);
-
-				if (zoomSize >= maxzoomSize) {
-					$('#magnification').prop('disabled', true);
-				} else if (minzoomSize >= zoomSize) {
-					$('#reduction').prop('disabled', true);
-				}
-			}
-		});
-	</script>
-	<style type="text/css">
-		#main {
-			padding-top: 6px;
-			padding-bottom: 20px;
-			background-color: lightgray;
-		}
-
-		#leftContainer {
-			display: inline;
-			float: left;
-			position: relative;
-			top: 0;
-			margin-top: -15px;
-			z-index: 100;
-			background-color: rgba(85, 85, 85, 0.85);
-			border: 4px solid rgb(255, 255, 255);
-		}
-
-		#rightContainer {}
-
-		#mainPreviewArea {
-			margin: 10px auto;
-			width: 98%;
-			text-align: center;
-		}
-
-		#mainPreviewArea object {
-			position: relative;
-		}
-	</style>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
