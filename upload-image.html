@@ -94,40 +94,32 @@
     <script type="text/javascript" src="js/hagaki2.js" charset="UTF-8"></script>
 
     <script type="text/javascript">
-        var idPreviewex = "W2PPreviewex";
-        var w2pPreviewex = W2PExternalIO_createW2PPreviewex(idPreviewex, w2pPreviewex_onLoadFinished);
-        var callbacks = {
-            "002": onAddImageFinished,
-            "003": onDeleteImageFinished,
-            "004": onResetHistoryFinished
-        };
-        w2pPreviewex.setCallbacks(callbacks);
         var flashvars = {
-            sid: "printboy",
-			aid: "86243c383d884984837ef58a078cc17e",
-			m: "98796046cfe9c46d",
-			sn: "171008d29ed1508f",
-			dn: "171008d29ed1508f0001",
+			sid: "printboy",
+			aid: "6a5e4bf1401445ed8655d357ad367e3d",
+			m: "b024755149e14634",
+			sn: "1710083f75af45f6",
+			dn: "1710083f75af45f60001",
 			g: "font:1,color:1,illust:printboy%2Fillustration,logo:1,item:SH481TXXXX",
 			ppba: "",
 			pppg: "",
 			furl: "preview.html%3Fcategory%3Dtype01%26mode%3D1",
 			burl: "easyedit.html%3Fcategory%3Dtype01%26itemId%3DW070%26page%3D1%26mode%3D2",
-            debug: "",
-            loglevel: ""
-        };
-        var params = {
-            menu: "false",
-            scale: "noScale",
-            allowFullscreen: "true",
-            allowScriptAccess: "always",
-            bgcolor: "#FFFFFF",
-            wmode: "opaque"
-        };
-        var attributes = {
-            id: "W2PPreviewex"
-        };
-        swfobject.embedSWF("https://stg3-wpl.web-creo.jp/WebMame/2.0/W2PPreviewex.swf", "altDesigner", "100%", "100%", "10.0.0", "expressInstall.swf", flashvars, params, attributes);
+			debug: "",
+			loglevel: ""
+		};
+		var params = {
+			menu: "false",
+			scale: "noScale",
+			allowFullscreen: "true",
+			allowScriptAccess: "always",
+			bgcolor: "#FFFFFF",
+			wmode: "opaque"
+		};
+		var attributes = {
+			id:"W2PDesignerV2"
+		};
+		swfobject.embedSWF("https://v2-wpl.web-creo.jp/WebMame/2.0/W2PDesignerV2.swf", "altDesigner", "100%", "100%", "10.0.0", "expressInstall.swf", flashvars, params, attributes);
     </script>
 </body>
 
