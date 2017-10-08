@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
 
-	$('#next').click(function () {
+	$('#nextPreview').click(function () {
 		var ret = w2pPreviewex.validate(onValidateFinished);
 		if (ret) {
 			W2PExternal_outDebug("w2pPreviewex.validate() call succeeded");
