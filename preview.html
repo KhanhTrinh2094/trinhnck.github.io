@@ -35,55 +35,6 @@
         observe(window, 'resize', resize); // for resize event
         observe(window, 'load', resize); // for initialize
     </script>
-    <script type="text/javascript">
-        $(function () {
-            //初期サイズ(%)
-            var zoomSize = 100;
-            //1回で変更するサイズ(%)
-            var range = 20;
-            //最少サイズ(%)
-            var minzoomSize = 100;
-            //最大サイズ(%)
-            var maxzoomSize = 300;
-
-            //初期表示
-            $('#reduction').prop('disabled', true);
-            $('#imageSize').html('倍率' + zoomSize + '%');
-
-            //縮小ボタン押下
-            $('#reduction').click(function () {
-                zooming(-range);
-                $('#magnification').prop('disabled', false);
-            });
-
-            //拡大ボタン押下
-            $('#magnification').click(function () {
-                zooming(range);
-                $('#reduction').prop('disabled', false);
-            });
-
-            //表示領域のサイズ変更
-            function zooming(val) {
-                //倍率変更
-                zoomSize += val;
-                $('#W2PPreview10').css({ 'width': zoomSize + '%', 'height': zoomSize + '%', 'position': 'relative' });
-                $('#imageSize').html('倍率' + zoomSize + '%');
-
-                //スクロールバーの位置を変更
-                var leftpos = ($('#W2PPreview10').width() - $('.mainFlashArea').width()) / 2;
-                $('.mainFlashArea').scrollLeft(leftpos);
-
-                //拡大/縮小ボタンの使用不可設定
-                if (zoomSize >= maxzoomSize) {
-                    //最大サイズ以上になった場合
-                    $('#magnification').prop('disabled', true);
-                } else if (minzoomSize >= zoomSize) {
-                    //最少サイズ以下になった場合
-                    $('#reduction').prop('disabled', true);
-                }
-            }
-        });
-    </script>
 </head>
 
 <body>
@@ -123,10 +74,10 @@
 
                 <div class="col-lg-12" style="margin:25px 0;">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <p class="center"><input type="button" class="btn btn-default" style="width:200px;" value="戻る" onclick="location.href='easyimg.html?pId=hagaki&itemId=waku1&sType=1&mode=2&category=cn_00'"></p>
+                        <p class="center"><input type="button" class="btn btn-default" style="width:200px;" value="戻る" onclick="location.href='upload-image.html'"></p>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <p class="center"><input type="button" class="btn btn-default" style="width:200px;" value="次へ" onclick="location.href='option.html?mode=2&category=cn_00'"></p>
+                        <p class="center"><input type="button" class="btn btn-default" style="width:200px;" value="次へ"></p>
                     </div>
                 </div>
             </div>
