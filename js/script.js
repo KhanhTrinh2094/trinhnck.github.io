@@ -41,7 +41,6 @@ var resize = function (event) {
 
 }
 
-
 var getViewPort = function () {
     var width, heiht;
     if (self.innerHeight) {
@@ -67,6 +66,11 @@ var observe = function (element, event, observer) {
 observe(window, 'resize', resize); // for resize event
 observe(window, 'load', resize); // for initialize
 //]]>
+
+function act(action) {
+    document.f_freeprev.postback_action.value = action;
+    document.f_freeprev.submit();
+}
 
 $(document).ready(function () {
     $('#next').click(function () {
