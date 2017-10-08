@@ -1,0 +1,441 @@
+<document id='1' version='2.0' type='wm-document'>
+<outputInfo>
+<output id='edit'>
+<info id='border' value='cyan' />
+<info id='format' value='PDF1.4' />
+<info id='registermark' value='type1-C' />
+</output>
+<output id='preview'>
+<info id='border' value='cyan' />
+<info id='format' value='JPEG' name='PDF1.4' />
+</output>
+<output id='check'>
+<info id='format' value='PDF1.4' name='PDF1.4' />
+<info id='paper-size' value='fitpage' />
+<info id='imposition' value='DIRECT' name='500' value-name='PRODUCTINFO' />
+<info id='registermark' value='typeD-1-C' />
+<info id='layer-off' value='hittest-under' />
+<info id='layer-off' value='frame-under' />
+<info id='layer-off' value='background-overlay' />
+<info id='layer-off' value='frame-upper' />
+</output>
+<output id='artwork'>
+<info id='format' value='EPS' name='PDF1.4' />
+<info id='registermark' value='type2' />
+<info id='layer-off' value='hittest-under' />
+<info id='layer-off' value='frame-under' />
+<info id='layer-off' value='background-overlay' />
+<info id='layer-off' value='frame-upper' />
+</output>
+</outputInfo>
+<processingInfo />
+<productInfo>
+<product>
+<info id='page-type' value='fixed' />
+<info id='page-minpages' value='1' />
+<info id='page-maxpages' value='1' />
+<info id='main-pageset' value='my-edited' />
+</product>
+</productInfo>
+<systemInfo />
+<pageSet id='my-edited' version='2.0' type='wm-pageset'>
+<page id='1' uid='1' version='2.0' type='wm-page' layout-type='wm-layout-svg'>
+<svg version='1.1' type='wm-layout-svg' wm-version='2.0' name='BIZCARD' desc='名刺(表面)たて型：w55 x h91mm' width='85mm' height='121mm' unit-type='mm' viewBox='-15 -15 85 121' paper-size='Free' input-mode='form'>
+<defs id='layout-master' type='layout-master' />
+<defs id='template-auto' type='template-auto'>
+<g id='bizcard-company' type='template-auto'>
+<g type='frame' size='9.8 84.6' autolayout-id='Creo/Bizcard/Company:CN001STRTS01'>
+<g type='item' item-type='text' template-input-id='catchphrase1' />
+<g type='item' item-type='text' template-input-id='catchphrase2' />
+<g type='item' item-type='text' template-input-id='company' font-style='font-weight:bold' />
+<g type='item' item-type='text' template-input-id='catchphrase3' font-style='font-size:5.0' />
+</g>
+</g>
+<g id='bizcard-organization' type='template-auto'>
+<g type='frame' size='7.5 75' autolayout-id='Creo/Bizcard/Name:HN001MTLTS01'>
+<g type='item' item-type='text' template-input-id='organization1' />
+<g type='item' item-type='text' template-input-id='organization2' />
+<g type='item' item-type='text' template-input-id='organization3' />
+</g>
+</g>
+<g id='bizcard-name' type='template-auto'>
+<g type='frame' size='12 65' autolayout-id='Creo/Bizcard/Name:HN001MTCMS01'>
+<g type='item' item-type='text' template-input-id='prefix1' />
+<g type='item' item-type='text' template-input-id='prefix2' />
+<g type='item' item-type='text' template-input-id='lastname' />
+<g type='item' item-type='text' template-input-id='firstname' />
+<g type='item' item-type='text' template-input-id='lastroman' />
+<g type='item' item-type='text' template-input-id='firstroman' />
+<g type='item' item-type='text' template-input-id='lastruby' />
+<g type='item' item-type='text' template-input-id='firstruby' />
+</g>
+</g>
+<g id='bizcard-address' type='template-auto'>
+<g type='frame' size='17.8 84.6' autolayout-id='Creo/Postcard/Address:SD011STLBJ01'>
+<g type='item' item-type='text' template-input-id='zipcode1' />
+<g type='item' item-type='text' template-input-id='basename1' />
+<g type='item' item-type='text' template-input-id='address1' />
+<g type='item' item-type='text' template-input-id='address2' />
+<g type='item' item-type='text' template-input-id='address3' />
+<g type='item' item-type='text' template-input-id='tel-title1' />
+<g type='item' item-type='text' template-input-id='tel1' />
+<g type='item' item-type='text' template-input-id='tel-title2' />
+<g type='item' item-type='text' template-input-id='tel2' />
+<g type='item' item-type='text' template-input-id='tel-title3' />
+<g type='item' item-type='text' template-input-id='tel3' />
+<g type='item' item-type='text' template-input-id='tel-title4' />
+<g type='item' item-type='text' template-input-id='tel4' />
+<g type='item' item-type='text' template-input-id='email-title1' />
+<g type='item' item-type='text' template-input-id='email1' />
+<g type='item' item-type='text' template-input-id='email-title2' />
+<g type='item' item-type='text' template-input-id='email2' />
+<g type='item' item-type='text' template-input-id='email-title3' />
+<g type='item' item-type='text' template-input-id='email3' />
+<g type='item' item-type='text' template-input-id='email-title4' />
+<g type='item' item-type='text' template-input-id='email4' />
+<g type='item' item-type='text' template-input-id='zipcode5' />
+<g type='item' item-type='text' template-input-id='basename5' />
+<g type='item' item-type='text' template-input-id='address5' />
+<g type='item' item-type='text' template-input-id='address6' />
+<g type='item' item-type='text' template-input-id='address7' />
+<g type='item' item-type='text' template-input-id='tel-title5' />
+<g type='item' item-type='text' template-input-id='tel5' />
+<g type='item' item-type='text' template-input-id='tel-title6' />
+<g type='item' item-type='text' template-input-id='tel6' />
+<g type='item' item-type='text' template-input-id='tel-title7' />
+<g type='item' item-type='text' template-input-id='tel7' />
+<g type='item' item-type='text' template-input-id='tel-title8' />
+<g type='item' item-type='text' template-input-id='tel8' />
+<g type='item' item-type='text' template-input-id='email-title5' />
+<g type='item' item-type='text' template-input-id='email5' />
+<g type='item' item-type='text' template-input-id='email-title6' />
+<g type='item' item-type='text' template-input-id='email6' />
+<g type='item' item-type='text' template-input-id='email-title7' />
+<g type='item' item-type='text' template-input-id='email7' />
+<g type='item' item-type='text' template-input-id='email-title8' />
+<g type='item' item-type='text' template-input-id='email8' />
+</g>
+</g>
+</defs>
+<defs id='form-input' type='form-input'>
+<g id='catchphrase1' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='キャッチフレーズ1'>
+<text input-mode='form'>お好きにデザインできる名刺なら！</text>
+<text input-mode='initial' />
+</g>
+<g id='catchphrase2' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='キャッチフレーズ2'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='catchphrase3' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='キャッチフレーズ3'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='company' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='会社名'>
+<text input-mode='form'>株式会社スタジオメイシー</text>
+<text input-mode='initial' />
+</g>
+<g id='organization1' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='40' text-length-type='char' desc='所属1'>
+<text input-mode='form'>デザイン本部</text>
+<text input-mode='initial' />
+</g>
+<g id='organization2' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='40' text-length-type='char' desc='所属2'>
+<text input-mode='form'>コンシューマー商品企画部</text>
+<text input-mode='initial' />
+</g>
+<g id='organization3' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='40' text-length-type='char' desc='所属3'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='prefix1' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='役職1'>
+<text input-mode='form'>クリエイティブデザイナー</text>
+<text input-mode='initial' />
+</g>
+<g id='prefix2' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='役職2'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='lastname' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='姓'>
+<text input-mode='form'>名刺谷</text>
+<text input-mode='initial' />
+</g>
+<g id='firstname' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='名'>
+<text input-mode='form'>太郎</text>
+<text input-mode='initial' />
+</g>
+<g id='lastroman' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='40' text-length-type='char' desc='姓'>
+<text input-mode='form'>MEISHIYA</text>
+<text input-mode='initial' />
+</g>
+<g id='firstroman' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='40' text-length-type='char' desc='名'>
+<text input-mode='form'>TARO</text>
+<text input-mode='initial' />
+</g>
+<g id='lastruby' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='40' text-length-type='char' desc='姓'>
+<text input-mode='form'>めい し や</text>
+<text input-mode='initial' />
+</g>
+<g id='firstruby' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='40' text-length-type='char' desc='名'>
+<text input-mode='form'>た ろう</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-basename' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='拠点名'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b1-zipcode' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='8' text-length-type='char' desc='支店郵便番号'>
+<text input-mode='form'>0000000</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-address1' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='40' text-length-type='char' desc='支店住所1'>
+<text input-mode='form'>東京都千代田区</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-address2' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='40' text-length-type='char' desc='支店住所2'>
+<text input-mode='form'>西神田０－０－０</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-address3' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='40' text-length-type='char' desc='支店住所3'>
+<text input-mode='form'>○○○○ビル10Ｆ</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-tel-title1' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='支店電話タイトル1'>
+<text input-mode='form'>TEL.</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-tel1' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='120' text-length-type='char' desc='支店電話番号1'>
+<text input-mode='form'>03-0000-1234</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-tel-title2' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='支店電話タイトル2'>
+<text input-mode='form'>FAX.</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-tel2' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='120' text-length-type='char' desc='支店電話番号2'>
+<text input-mode='form'>03-0000-5678</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-tel-title3' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='支店電話タイトル3'>
+<text input-mode='form'>携帯.</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-tel3' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='120' text-length-type='char' desc='支店電話番号3'>
+<text input-mode='form'>090-0000-1234</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-tel-title4' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='支店電話タイトル4'>
+<text input-mode='form'>（フリーダイヤル）</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-tel4' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='120' text-length-type='char' desc='支店電話番号4'>
+<text input-mode='form'>0120-000-123</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-email-title1' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='支店メールアドレスタイトル1'>
+<text input-mode='form'>e-mail：</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-email1' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='120' text-length-type='char' desc='支店メールアドレス1'>
+<text input-mode='form'>meishiya_taro@example1.com</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-email-title2' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='支店メールアドレスタイトル2'>
+<text input-mode='form'>URL：</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-email2' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='120' text-length-type='char' desc='支店メールアドレス2'>
+<text input-mode='form'>http://www.example1.com</text>
+<text input-mode='initial' />
+</g>
+<g id='b1-email-title3' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='支店メールアドレスタイトル3'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b1-email3' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='120' text-length-type='char' desc='支店メールアドレス3'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b1-email-title4' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='支店メールアドレスタイトル4'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b1-email4' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='120' text-length-type='char' desc='支店メールアドレス4'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-basename' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='拠点名'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-zipcode' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='8' text-length-type='char' desc='支店郵便番号'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-address1' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='40' text-length-type='char' desc='支店住所1'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-address2' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='40' text-length-type='char' desc='支店住所2'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-address3' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='40' text-length-type='char' desc='支店住所3'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-tel-title1' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='支店電話タイトル1'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-tel1' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='120' text-length-type='char' desc='支店電話番号1'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-tel-title2' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='支店電話タイトル2'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-tel2' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='120' text-length-type='char' desc='支店電話番号2'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-tel-title3' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='支店電話タイトル3'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-tel3' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='120' text-length-type='char' desc='支店電話番号3'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-tel-title4' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='支店電話タイトル4'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-tel4' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='120' text-length-type='char' desc='支店電話番号4'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-email-title1' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='支店メールアドレスタイトル1'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-email1' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='120' text-length-type='char' desc='支店メールアドレス1'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-email-title2' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='支店メールアドレスタイトル2'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-email2' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='120' text-length-type='char' desc='支店メールアドレス2'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-email-title3' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='支店メールアドレスタイトル3'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-email3' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='120' text-length-type='char' desc='支店メールアドレス3'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-email-title4' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='20' text-length-type='char' desc='支店メールアドレスタイトル4'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+<g id='b2-email4' type='form-input' form-input-type='text' text-minlength='0' text-maxlength='120' text-length-type='char' desc='支店メールアドレス4'>
+<text input-mode='form' />
+<text input-mode='initial' />
+</g>
+</defs>
+<g id='1' type='layout-box' area='-15 -15 85 121' topleft='-15 -15' crop-box='-15 -15 85 121' bleed-box='-3 -3 61 97' trim-box='0 0 55 91'>
+<g id='edit' type='layout' />
+<g id='original' type='layout'>
+<g id='hittest-under' type='layer' enabled='true' visible='true' fixed='false' />
+<g id='frame-under' type='layer' enabled='true' visible='true' fixed='false' />
+<g id='background-clipped' type='layer' enabled='true' visible='true' fixed='false' />
+<g id='background' type='layer' enabled='true' visible='true' fixed='false' />
+<g id='background-overlay' type='layer' enabled='true' visible='true' fixed='false' />
+<g id='fixed-under' type='layer' enabled='true' visible='true' fixed='false' />
+<g id='variable-2' type='layer' font-style='font-family:jgtr00m;fill:black'>
+<g type='item' item-type='template-auto' area='42 3.2 9.8 84.6'>
+<template-auto template-auto-id='bizcard-company'>
+<idmap form-input-id='catchphrase1' template-input-id='catchphrase1' />
+<idmap form-input-id='catchphrase2' template-input-id='catchphrase2' />
+<idmap form-input-id='catchphrase3' template-input-id='catchphrase3' />
+<idmap form-input-id='company' template-input-id='company' />
+</template-auto>
+</g>
+<g type='item' item-type='template-auto' area='34 8 7.5 75'>
+<template-auto template-auto-id='bizcard-organization'>
+<idmap form-input-id='organization1' template-input-id='organization1' />
+<idmap form-input-id='organization2' template-input-id='organization2' />
+<idmap form-input-id='organization3' template-input-id='organization3' />
+</template-auto>
+</g>
+<g type='item' item-type='template-auto' area='21.5 13 12 65'>
+<template-auto template-auto-id='bizcard-name'>
+<idmap form-input-id='prefix1' template-input-id='prefix1' />
+<idmap form-input-id='prefix2' template-input-id='prefix2' />
+<idmap form-input-id='lastname' template-input-id='lastname' />
+<idmap form-input-id='firstname' template-input-id='firstname' />
+<idmap form-input-id='lastroman' template-input-id='lastroman' />
+<idmap form-input-id='firstroman' template-input-id='firstroman' />
+<idmap form-input-id='lastruby' template-input-id='lastruby' />
+<idmap form-input-id='firstruby' template-input-id='firstruby' />
+</template-auto>
+</g>
+<g type='item' item-type='template-auto' area='3.2 3.2 17.8 84.6'>
+<template-auto template-auto-id='bizcard-address'>
+<idmap form-input-id='b1-basename' template-input-id='basename1' />
+<idmap form-input-id='b1-zipcode' template-input-id='zipcode1' />
+<idmap form-input-id='b1-address1' template-input-id='address1' />
+<idmap form-input-id='b1-address2' template-input-id='address2' />
+<idmap form-input-id='b1-address3' template-input-id='address3' />
+<idmap form-input-id='b1-tel-title1' template-input-id='tel-title1' />
+<idmap form-input-id='b1-tel1' template-input-id='tel1' />
+<idmap form-input-id='b1-tel-title2' template-input-id='tel-title2' />
+<idmap form-input-id='b1-tel2' template-input-id='tel2' />
+<idmap form-input-id='b1-tel-title3' template-input-id='tel-title3' />
+<idmap form-input-id='b1-tel3' template-input-id='tel3' />
+<idmap form-input-id='b1-tel-title4' template-input-id='tel-title4' />
+<idmap form-input-id='b1-tel4' template-input-id='tel4' />
+<idmap form-input-id='b1-email-title1' template-input-id='email-title1' />
+<idmap form-input-id='b1-email1' template-input-id='email1' />
+<idmap form-input-id='b1-email-title2' template-input-id='email-title2' />
+<idmap form-input-id='b1-email2' template-input-id='email2' />
+<idmap form-input-id='b1-email-title3' template-input-id='email-title3' />
+<idmap form-input-id='b1-email3' template-input-id='email3' />
+<idmap form-input-id='b1-email-title4' template-input-id='email-title4' />
+<idmap form-input-id='b1-email4' template-input-id='email4' />
+<idmap form-input-id='b2-basename' template-input-id='basename5' />
+<idmap form-input-id='b2-zipcode' template-input-id='zipcode5' />
+<idmap form-input-id='b2-address1' template-input-id='address5' />
+<idmap form-input-id='b2-address2' template-input-id='address6' />
+<idmap form-input-id='b2-address3' template-input-id='address7' />
+<idmap form-input-id='b2-tel-title1' template-input-id='tel-title5' />
+<idmap form-input-id='b2-tel1' template-input-id='tel5' />
+<idmap form-input-id='b2-tel-title2' template-input-id='tel-title6' />
+<idmap form-input-id='b2-tel2' template-input-id='tel6' />
+<idmap form-input-id='b2-tel-title3' template-input-id='tel-title7' />
+<idmap form-input-id='b2-tel3' template-input-id='tel7' />
+<idmap form-input-id='b2-tel-title4' template-input-id='tel-title8' />
+<idmap form-input-id='b2-tel4' template-input-id='tel8' />
+<idmap form-input-id='b2-email-title1' template-input-id='email-title5' />
+<idmap form-input-id='b2-email1' template-input-id='email5' />
+<idmap form-input-id='b2-email-title2' template-input-id='email-title6' />
+<idmap form-input-id='b2-email2' template-input-id='email6' />
+<idmap form-input-id='b2-email-title3' template-input-id='email-title7' />
+<idmap form-input-id='b2-email3' template-input-id='email7' />
+<idmap form-input-id='b2-email-title4' template-input-id='email-title8' />
+<idmap form-input-id='b2-email4' template-input-id='email8' />
+</template-auto>
+</g>
+</g>
+<g id='fixed-upper' type='layer' enabled='true' visible='true' fixed='false' />
+<g id='frame-upper' type='layer' enabled='true' visible='true' fixed='false' />
+</g>
+</g>
+</svg>
+</page>
+</pageSet>
+</document>

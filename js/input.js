@@ -324,8 +324,6 @@ function SetToFlashValue(column_name, flash_id, property, isSetBlank) {
 
 	try {
 		w2pBridge.setValue(flash_id, return_value);
-		console.log("FlashID : " + flash_id);
-		console.log("ReturnValue : " + return_value);
 	}
 	catch (e) {
 		addWarning("Flashプレビュー：" + flash_id + " への値の設定に失敗しました。");
