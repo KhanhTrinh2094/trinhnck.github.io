@@ -23,6 +23,37 @@
 	<script src="js/dialog.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		var resize = function (event) {
+			var leftContainer = $("#leftContainer").get(0);
+			var altPreview = $("#mainPreviewArea").get(0);
+			var w2pPreview = $("#W2PPreview10").get(0);
+
+			var viewport = getViewPort();
+			var iHeight = viewport.height - 300;
+			var iWidth = viewport.width - 300;
+			var objWidth = $("#leftContainer").width();
+
+			altPreview.style.height = objWidth + 'px';
+			w2pPreview.style.height = objWidth + 'px';
+
+			if (objWidth <= iHeight) {
+				altPreview.style.height = objWidth + 'px';
+				w2pPreview.style.height = objWidth + 'px';
+			}
+
+			if (iHeight >= 380) {
+				altPreview.style.height = objWidth + 'px';
+				w2pPreview.style.height = objWidth + 'px';
+			}
+
+			if (objWidth > iHeight) {
+				altPreview.style.height = iHeight + 'px';
+				w2pPreview.style.height = iHeight + 'px';
+			}
+
+		}
+	</script>
 </head>
 
 <body>
@@ -503,14 +534,14 @@
 							 class="btn btn-default" style="width:200px;"></p>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-						<p class="center"><input type="button" name="freeeidt" value="こだわり編集へ" onClick="location.href='freeedit.html'"
-							 class="btn btn-default" style="width:200px;"></p>
+						<p class="center"><input type="button" name="freeeidt" value="こだわり編集へ" onClick="location.href='freeedit.html'" class="btn btn-default"
+							 style="width:200px;"></p>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 						<p class="center"><input type="button" id="next" name="easyprev" value="次へ" class="btn btn-default" style="width:200px;"></p>
 					</div>
-					<!-- <input type="hidden" name="usertype" value=""> -->
-					<!-- <input type="hidden" id="postback_action" name="postback_action" value=""> -->
+					<input type="hidden" name="usertype" value="">
+					<input type="hidden" id="postback_action" name="postback_action" value="">
 				</form>
 			</div>
 			<!--class container-->

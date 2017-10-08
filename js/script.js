@@ -11,36 +11,6 @@ $(document).ready(function () {
     // });
 });
 
-var resize = function (event) {
-    var leftContainer = $("#leftContainer").get(0);
-    var altPreview = $("#mainPreviewArea").get(0);
-    var w2pPreview = $("#W2PPreview10").get(0);
-
-    var viewport = getViewPort();
-    var iHeight = viewport.height - 300;
-    var iWidth = viewport.width - 300;
-    var objWidth = $("#leftContainer").width();
-
-    altPreview.style.height = objWidth + 'px';
-    w2pPreview.style.height = objWidth + 'px';
-
-    if (objWidth <= iHeight) {
-        altPreview.style.height = objWidth + 'px';
-        w2pPreview.style.height = objWidth + 'px';
-    }
-
-    if (iHeight >= 380) {
-        altPreview.style.height = objWidth + 'px';
-        w2pPreview.style.height = objWidth + 'px';
-    }
-
-    if (objWidth > iHeight) {
-        altPreview.style.height = iHeight + 'px';
-        w2pPreview.style.height = iHeight + 'px';
-    }
-
-}
-
 var getViewPort = function () {
     var width, heiht;
     if (self.innerHeight) {
