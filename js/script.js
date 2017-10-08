@@ -33,8 +33,6 @@ var observe = function (element, event, observer) {
         element.attachEvent('on' + event, observer);
     }
 };
-observe(window, 'resize', resize); // for resize event
-observe(window, 'load', resize); // for initialize
 //]]>
 
 function act(action) {

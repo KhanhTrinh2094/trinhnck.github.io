@@ -26,7 +26,6 @@
     <script type="text/javascript" src="js/script.js"></script>
 
     <script language="JavaScript">
-        
         var resize = function (event) {
             var main = document.getElementById('main');
             var viewport = getViewPort();
@@ -34,6 +33,8 @@
             main.style.height = (height <= 0 ? 0 : height) + 'px';
         }
 
+        observe(window, 'resize', resize); // for resize event
+        observe(window, 'load', resize); // for initialize
     </script>
 </head>
 
