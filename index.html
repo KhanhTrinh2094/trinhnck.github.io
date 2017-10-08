@@ -192,68 +192,7 @@
 
 <body>
 	<div class="container-fluid">
-		<div id="header" style="height:auto;">
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-				<a href="/pc/index.html"><img src="/pc/img/demologo.png" alt="W2Pデモ　ショップサンプル" class="img-responsive"></a>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="float:right;text-align:right;">
-				<a href="/pc/login/login.html"><span>ログイン</span></a> | <a href="/pc/account/create.html"><span>会員登録</span></a>
-			</div>
-		</div>
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-					 aria-controls="navbar">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  </button>
-					<a class="navbar-brand">サービスメニュー</a>
-				</div>
-				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav">
-						<li id="nav_top"><a href="/pc/index.html">トップ</a></li>
-						<li id="nav_service"><a href="/pc/static/static.html?template=service">サービス概要</a></li>
-						<li id="nav_usage"><a href="/pc/static/static.html?template=usage">ご利用方法</a></li>
-						<li id="nav_guidance"><a href="/pc/static/static.html?template=guidance">料金案内</a></li>
-						<li id="nav_inquiry"><a href="/pc/static/static.html?template=inquiry">お問い合わせ</a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li class="cart"><a href="/pc/cart/cart.html">カート</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<script type="text/javascript">
-			var naviConfig = [
-				{ rule: "/pc/index.html", selector: "#nav_top" },
-				{ rule: "service", selector: "#nav_service" },
-				{ rule: "nomember", selector: "#nav_service" },
-				{ rule: "memberonly", selector: "#nav_service" },
-				{ rule: "usage", selector: "#nav_usage" },
-				{ rule: "guidance", selector: "#nav_guidance" },
-				{ rule: "inquiry", selector: "#nav_inquiry" }
-			];
-			(function (config) {
-				for (var i = 0; i < config.length; i++) {
-					if (location.href.match(config[i].rule)) {
-						$(config[i].selector).addClass("active");
-						return;
-					}
-				}
-			})(naviConfig);
-		</script>
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="alert alert-warning" role="alert">
-						<h4 class="center-block">Patern B2C</h4>
-						<p class="text-warning">※【注意】本サイトは、弊社 "W2Pクラウド（WebtoPrint用ASPサービス）" の機能紹介用デモサイトです。（実際にご注文いただくことはできません）</p>
-					</div>
-				</div>
-			</div>
 			<div class="page-header col-lg-12">
 				<h2>かんたん編集</h2>
 			</div>
@@ -742,76 +681,6 @@
 			<!--class container-->
 		</div>
 		<!-- main▲ -->
-		<!-- footer▼-->
-		<footer class="footer" style="margin-top:45px;">
-			<div class="container-fluid">
-				<!-- フッター -->
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="feature_text">
-							<h4><a href="/pc/index.html">W2P STORE SAMPLE</a></h4>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="footer_menu_area">
-						<div class="col-lg-3col-md-3 col-sm-3 col-xs-12">
-							<div class="help_support">
-								<h2>HELP &amp; SUPPORT</h2>
-								<ul class="footer_menu">
-									<li><a href="#">このサイトについて</a></li>
-									<li><a href="#">サービス概要について</a></li>
-									<li><a href="#">初めての方へ</a></li>
-									<li><a href="#">ご利用方法</a></li>
-									<li><a href="#">料金のご案内</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-							<div class="help_support help_border">
-								<h2>MY ACCOUNT</h2>
-								<ul class="footer_menu">
-									<li><a href="#">アカウントについて</a></li>
-									<li><a href="#">ログイン</a></li>
-									<li><a href="#">カートを見る</a></li>
-									<li><a href="#">マイページ</a></li>
-									<li><a href="#">お支払い</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-							<div class="help_support help_border">
-								<h2>HELP &amp; SUPPORT</h2>
-								<ul class="footer_menu">
-									<li><a href="/pc/static/static.html?template=company">運営企業について</a></li>
-									<li><a href="/pc/static/static.html?template=tokushoho">特定商取引法に基づく表記</a></li>
-									<li><a href="/pc/static/static.html?template=inquiry">お問い合わせ</a></li>
-									<li><a href="#">○○○○</a></li>
-									<li><a href="#">○○○○○○</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-							<div class="help_support help_border">
-								<h2>このサイトについて</h2>
-								<ul class="footer_menu">
-									<li><a href="/pc/static/static.html?template=company">運営会社</a></li>
-									<li><a href="#">利用規約</a></li>
-									<li><a href="#">個人情報保護方針</a></li>
-									<li><a href="/pc/static/static.html?template=tokushoho">特定商取引法に基づく表記</a></li>
-									<li><a href="/pc/static/static.html?template=inquiry">ご意見・ご要望</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div id="footerCopyright">
-						<p class="copyright">Copyright(c) W2P SITE SHOP SAMPLE all rights reserved.</p>
-					</div>
-				</div>
-			</div>
-		</footer>
 	</div>
 	<script type="text/javascript" src="js/jquery-contained-sticky-scroll.js"></script>
 	<script type="text/javascript" src="js/swfobject.js"></script>
