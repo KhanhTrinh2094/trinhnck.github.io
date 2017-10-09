@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Response xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.0" id="N305" status-id="200">
+	<Service id="sid99" />
+	<Account id="a3f821eed9dd4b85b45dc3dcdc841f79" />
+	<BlockCopySet id="171008589ad12163">
+		<BlockCopyData id="171008589ad121630001" />
+	</BlockCopySet>
+	<Layout>
+		<document id="1" version="2.0" type="wm-document">
+			<outputInfo>
+				<output id="edit">
+					<info id="border" value="cyan" />
+					<info id="format" value="PDF1.4" />
+					<info id="registermark" value="type1-C" />
+				</output>
+				<output id="preview">
+					<info id="border" value="cyan" />
+					<info id="format" value="JPEG" name="PDF1.4" />
+				</output>
+				<output id="check">
+					<info id="format" value="PDF1.4" name="PDF1.4" />
+					<info id="paper-size" value="fit" />
+				</output>
+				<output id="artwork">
+					<info id="format" value="EPS" name="PDF1.4" />
+					<info id="registermark" value="type1-C" />
+				</output>
+			</outputInfo>
+			<processingInfo />
+			<systemInfo />
+			<pageSet id="1" version="2.0" type="wm-pageset">
+				<page id="1" version="2.0" type="wm-page" layout-type="wm-layout-svg">
+					<svg version="1.1" type="wm-layout-svg" wm-version="2.0" name="SH481T" desc="通常はがき（郵便はがき）：裏面（タテ）w100 x h148mm" width="100mm" height="148mm" unit-type="mm" viewBox="0 0 100 148" paper-size="Free" input-mode="form">
+						<defs id="layout-master" type="layout-master" />
+						<defs id="template-auto" type="template-auto">
+							<g id="address" type="template-auto">
+								<g type="frame" size="89.06005 26.98057" autolayout-id="Creo/Postcard/Address:SD020MYCBC02">
+									<g type="item" item-type="text" template-input-id="zipcode" />
+									<g type="item" item-type="text" template-input-id="address1" />
+									<g type="item" item-type="text" template-input-id="address2" />
+									<g type="item" item-type="text" template-input-id="address3" />
+									<g type="item" item-type="text" template-input-id="company" />
+									<g type="item" item-type="text" template-input-id="organization1" />
+									<g type="item" item-type="text" template-input-id="organization2" />
+									<g type="item" item-type="text" template-input-id="organization3" />
+									<g type="item" item-type="text" template-input-id="prefix1" />
+									<g type="item" item-type="text" template-input-id="lastname1" />
+									<g type="item" item-type="text" template-input-id="firstname1" />
+									<g type="item" item-type="text" template-input-id="suffix1" />
+									<g type="item" item-type="text" template-input-id="prefix2" />
+									<g type="item" item-type="text" template-input-id="lastname2" />
+									<g type="item" item-type="text" template-input-id="firstname2" />
+									<g type="item" item-type="text" template-input-id="suffix2" />
+									<g type="item" item-type="text" template-input-id="prefix3" />
+									<g type="item" item-type="text" template-input-id="lastname3" />
+									<g type="item" item-type="text" template-input-id="firstname3" />
+									<g type="item" item-type="text" template-input-id="suffix3" />
+									<g type="item" item-type="text" template-input-id="prefix4" />
+									<g type="item" item-type="text" template-input-id="lastname4" />
+									<g type="item" item-type="text" template-input-id="firstname4" />
+									<g type="item" item-type="text" template-input-id="suffix4" />
+									<g type="item" item-type="text" template-input-id="prefix5" />
+									<g type="item" item-type="text" template-input-id="lastname5" />
+									<g type="item" item-type="text" template-input-id="firstname5" />
+									<g type="item" item-type="text" template-input-id="suffix5" />
+									<g type="item" item-type="text" template-input-id="prefix6" />
+									<g type="item" item-type="text" template-input-id="lastname6" />
+									<g type="item" item-type="text" template-input-id="firstname6" />
+									<g type="item" item-type="text" template-input-id="suffix6" />
+									<g type="item" item-type="text" template-input-id="tel-title1" />
+									<g type="item" item-type="text" template-input-id="tel1" />
+									<g type="item" item-type="text" template-input-id="tel-title2" />
+									<g type="item" item-type="text" template-input-id="tel2" />
+									<g type="item" item-type="text" template-input-id="tel-title3" />
+									<g type="item" item-type="text" template-input-id="tel3" />
+									<g type="item" item-type="text" template-input-id="email-title1" />
+									<g type="item" item-type="text" template-input-id="email1" />
+									<g type="item" item-type="text" template-input-id="email-title2" />
+									<g type="item" item-type="text" template-input-id="email2" />
+									<g type="item" item-type="text" template-input-id="email-title3" />
+									<g type="item" item-type="text" template-input-id="email3" />
+								</g>
+							</g>
+							<g id="message_01" type="template-auto">
+								<g type="frame" size="74.40555 23.39754" frame-style="arrange-mode:tb;frame-align:start;frame-writing-align:justify;" autolayout-id="Creo/standard/standard:Y">
+									<g type="item" item-type="text" template-input-id="message" text-style="writing-mode:lr-tb" />
+								</g>
+							</g>
+						</defs>
+						<defs id="form-input" type="form-input">
+							<g id="message" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="320" desc="本文">
+								<text input-mode="form">旧年中は大変お世話になりました
+本年もよろしくお願いいたします
+
+　　　　　　平成二十八年 元旦</text>
+								<text input-mode="initial">本文を入力してください。</text>
+							</g>
+							<g id="zipcode" type="form-input" form-input-type="text" text-minlength="7" text-maxlength="8" text-length-type="char" desc="郵便番号">
+								<text input-mode="form">1010065</text>
+								<text input-mode="initial" />
+							</g>
+							<g id="address1" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="住所1">
+								<text input-mode="form">東京都千代田区</text>
+								<text input-mode="initial" />
+							</g>
+							<g id="address2" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="住所2">
+								<text input-mode="form">西神田３－１－６</text>
+								<text input-mode="initial" />
+							</g>
+							<g id="address3" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="住所3">
+								<text input-mode="form">日本弘道会ビル　４Ｆ</text>
+								<text input-mode="initial" />
+							</g>
+							<g id="company" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="会社名">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="organization1" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="所属1">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="organization2" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="所属2">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="organization3" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="所属3">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="prefix1" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="役職1">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="lastname1" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="姓1">
+								<text input-mode="form">葉書谷</text>
+								<text input-mode="initial" />
+							</g>
+							<g id="firstname1" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="名1">
+								<text input-mode="form">太郎</text>
+								<text input-mode="initial" />
+							</g>
+							<g id="suffix1" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="旧姓・年齢1">
+								<text input-mode="form">旧姓（葉書）</text>
+								<text input-mode="initial" />
+							</g>
+							<g id="prefix2" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="役職2">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="lastname2" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="姓2">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="firstname2" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="名2">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="suffix2" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="旧姓・年齢2">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="prefix3" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="役職3">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="lastname3" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="姓3">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="firstname3" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="名3">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="suffix3" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="旧姓・年齢3">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="prefix4" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="役職4">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="lastname4" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="姓4">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="firstname4" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="名4">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="suffix4" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="旧姓・年齢4">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="prefix5" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="役職5">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="lastname5" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="姓5">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="firstname5" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="名5">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="suffix5" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="旧姓・年齢5">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="prefix6" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="役職6">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="lastname6" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="姓6">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="firstname6" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="名6">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="suffix6" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="旧姓・年齢6">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="tel-title1" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="電話タイトル1">
+								<text input-mode="form">TEL</text>
+								<text input-mode="initial">TEL1 </text>
+							</g>
+							<g id="tel1" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="電話番号1">
+								<text input-mode="form">03-0000-1234</text>
+								<text input-mode="initial" />
+							</g>
+							<g id="tel-title2" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="電話タイトル2">
+								<text input-mode="form">携帯</text>
+								<text input-mode="initial" />
+							</g>
+							<g id="tel2" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="電話番号2">
+								<text input-mode="form">090-0000-1234</text>
+								<text input-mode="initial" />
+							</g>
+							<g id="tel-title3" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="電話タイトル3">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="tel3" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="電話番号3">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="email-title1" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="メールアドレスタイトル1">
+								<text input-mode="form">email:</text>
+								<text input-mode="initial" />
+							</g>
+							<g id="email1" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="50" text-length-type="char" desc="メールアドレス1">
+								<text input-mode="form">myaddress@example.com</text>
+								<text input-mode="initial" />
+							</g>
+							<g id="email-title2" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="メールアドレスタイトル2">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="email2" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="50" text-length-type="char" desc="メールアドレス2">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="email-title3" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="20" text-length-type="char" desc="メールアドレスタイトル3">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+							<g id="email3" type="form-input" form-input-type="text" text-minlength="0" text-maxlength="50" text-length-type="char" desc="メールアドレス3">
+								<text input-mode="form" />
+								<text input-mode="initial" />
+							</g>
+						</defs>
+						<g id="1" type="layout-box" area="0 0 100 148" topleft="0 0" crop-box="0 0 100 148" bleed-box="0 0 100 148" trim-box="0 0 100 148">
+							<g id="edit" type="layout" />
+							<g id="original" type="layout">
+								<g type="layer" id="background-clipped" enabled="true" visible="true" fixed="false" />
+								<g type="layer" id="background" enabled="true" visible="true" fixed="false">
+									<g type="item" item-type="image" area="0 0 100 148">
+										<image type="image/illust" src="id:sid99/postcard/summer/summerbk/CG11SP0004;name:CG11SP0004" image-style="scale:fit" src-type="standard" mime-type="image/png">
+											<g type="item" item-type="clip" area="29.5 53.1 41.02222 41.41039" id="CLIP1">
+												<clip type="ellipse" ellipse="40.92222 41.31039" shape-style="stroke-width:0.1;fill:gray" />
+											</g>
+										</image>
+									</g>
+								</g>
+								<g type="layer" id="variable-2" enabled="true" visible="true" fixed="false" font-style="font-family:CRCCGRYM;fill:black">
+									<g type="item" item-type="template-auto" area="6.1 106.8 89.06005 26.98057">
+										<template-auto template-auto-id="address">
+											<idmap form-input-id="zipcode" template-input-id="zipcode" />
+											<idmap form-input-id="address1" template-input-id="address1" />
+											<idmap form-input-id="address2" template-input-id="address2" />
+											<idmap form-input-id="address3" template-input-id="address3" />
+											<idmap form-input-id="company" template-input-id="company" />
+											<idmap form-input-id="organization1" template-input-id="organization1" />
+											<idmap form-input-id="organization2" template-input-id="organization2" />
+											<idmap form-input-id="organization3" template-input-id="organization3" />
+											<idmap form-input-id="prefix1" template-input-id="prefix1" />
+											<idmap form-input-id="lastname1" template-input-id="lastname1" />
+											<idmap form-input-id="firstname1" template-input-id="firstname1" />
+											<idmap form-input-id="suffix1" template-input-id="suffix1" />
+											<idmap form-input-id="prefix2" template-input-id="prefix2" />
+											<idmap form-input-id="lastname2" template-input-id="lastname2" />
+											<idmap form-input-id="firstname2" template-input-id="firstname2" />
+											<idmap form-input-id="suffix2" template-input-id="suffix2" />
+											<idmap form-input-id="prefix3" template-input-id="prefix3" />
+											<idmap form-input-id="lastname3" template-input-id="lastname3" />
+											<idmap form-input-id="firstname3" template-input-id="firstname3" />
+											<idmap form-input-id="suffix3" template-input-id="suffix3" />
+											<idmap form-input-id="prefix4" template-input-id="prefix4" />
+											<idmap form-input-id="lastname4" template-input-id="lastname4" />
+											<idmap form-input-id="firstname4" template-input-id="firstname4" />
+											<idmap form-input-id="suffix4" template-input-id="suffix4" />
+											<idmap form-input-id="prefix5" template-input-id="prefix5" />
+											<idmap form-input-id="lastname5" template-input-id="lastname5" />
+											<idmap form-input-id="firstname5" template-input-id="firstname5" />
+											<idmap form-input-id="suffix5" template-input-id="suffix5" />
+											<idmap form-input-id="prefix6" template-input-id="prefix6" />
+											<idmap form-input-id="lastname6" template-input-id="lastname6" />
+											<idmap form-input-id="firstname6" template-input-id="firstname6" />
+											<idmap form-input-id="suffix6" template-input-id="suffix6" />
+											<idmap form-input-id="tel-title1" template-input-id="tel-title1" />
+											<idmap form-input-id="tel1" template-input-id="tel1" />
+											<idmap form-input-id="tel-title2" template-input-id="tel-title2" />
+											<idmap form-input-id="tel2" template-input-id="tel2" />
+											<idmap form-input-id="tel-title3" template-input-id="tel-title3" />
+											<idmap form-input-id="tel3" template-input-id="tel3" />
+											<idmap form-input-id="email-title1" template-input-id="email-title1" />
+											<idmap form-input-id="email1" template-input-id="email1" />
+											<idmap form-input-id="email-title2" template-input-id="email-title2" />
+											<idmap form-input-id="email2" template-input-id="email2" />
+											<idmap form-input-id="email-title3" template-input-id="email-title3" />
+											<idmap form-input-id="email3" template-input-id="email3" />
+										</template-auto>
+									</g>
+									<g type="item" item-type="template-auto" area="14.4 12.9 74.40555 23.39754" font-style="font-size:4.5" text-style="text-align:start">
+										<template-auto template-auto-id="message_01">
+											<idmap form-input-id="message" template-input-id="message" />
+										</template-auto>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</page>
+			</pageSet>
+		</document>
+	</Layout>
+</Response>
