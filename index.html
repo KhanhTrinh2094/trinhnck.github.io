@@ -566,20 +566,20 @@
 		});
 	</script>
 	<script type="text/javascript">
-		idBridge = "W2PBridge";
 		idPreview = "W2PPreview10";
+		idBridge = "W2PBridge";
 		var w2pBridge = W2PExternalIO_createW2PBridge(idBridge, w2pBridge_onLoadFinished);
 		var w2pPreview = W2PExternalIO_createW2PPreview(idPreview, w2pPreview_onLoadFinished);
 
 		var flashvars =
 			{
-				sid: "sid99",
-				aid: "a3f821eed9dd4b85b45dc3dcdc841f79",
-				m: "98ea9c3da2fb9444",
-				sn: "171008594f5584d3",
-				dn: "171008594f5584d30001",
+				sid: "tcpc",
+				aid: "a84d7c2ba34244a4ae919504d1c025ba",
+				m: "ae0538d919ddda38",
+				sn: "17101044af3de8e6",
+				dn: "17101044af3de8e60001",
 				//g: "font:3,color:2,illust:1,logo:imjqk6k7ois01i6afg5l8bh270",
-				g: "font:2,color:2,illust:sid99%2Fillustration,logo:1,item:SH481XXXXX",
+				g: "font:1,color:1,illust:tcpc,logo:1,item:BC4XXXXXX1",
 				furl: "./",
 				burl: "./",
 				debug: "",
@@ -590,7 +590,8 @@
 			scale: "noScale",
 			allowFullscreen: "true",
 			allowScriptAccess: "always",
-			bgcolor: "#FFFFFF"
+			bgcolor: "#FFFFFF",
+			wmode: "opaque"
 		};
 		var attributesBridge = {
 			id: idBridge
@@ -599,8 +600,8 @@
 			id: idPreview
 		};
 
-		swfobject.embedSWF("https://stg3-wpl.web-creo.jp/WebMame/2.0/W2PBridge.swf", "altBridge", "1px", "0px", "10.0.0", "expressInstall.swf", flashvars, params, attributesBridge);
-		swfobject.embedSWF("https://stg3-wpl.web-creo.jp/WebMame/2.0/W2PPreview10.swf", "altPreview", "100%", "100%", "10.0.0", "expressInstall.swf", flashvars, params, attributesPreview);
+		swfobject.embedSWF("https://stg-v2-wpl.web-creo.jp/WebMame/2.0/W2PBridgeV2.swf", "altBridge", "1px", "0", "12.0.0", "expressInstall.swf", flashvars, params, attributesBridge);
+		swfobject.embedSWF("https://stg-v2-wpl.web-creo.jp/WebMame/2.0/W2PPreviewV2.swf", "altPreview", "100%", "100%", "12.0.0", "expressInstall.swf", flashvars, params, attributesPreview);
 	</script>
 </body>
 
